@@ -1,0 +1,74 @@
+/* Navbar container inside carousel border */
+.navbar {
+    width: 50%; /* Matches the width of the carousel-slide */
+    position: absolute; /* Allows positioning within the carousel */
+    top: 20px; /* Adjust distance from the top of the carousel */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8); /* Matches carousel border */
+    border-radius: 8px; /* Slight rounding for a sleek effect */
+    padding: 10px 0;
+    z-index: 2; /* Ensures it's above the carousel image */
+  }
+  
+  /* Navbar links container */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 0; /* No gaps; separators handle spacing */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  
+  /* Navbar individual links */
+  .navbar-links li {
+    position: relative; /* For adding separators */
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 15px; /* Spacing inside links */
+    transition: color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  /* Hover effect for links */
+  .navbar-links li a:hover {
+    color: #ffcc00; /* Highlight effect */
+  }
+  
+  /* Separator styling */
+  .navbar-links li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60%; /* Adjust based on your navbar height */
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.5); /* Subtle separator */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-links li a {
+      font-size: 0.9rem;
+      padding: 0 10px; /* Adjust spacing for smaller screens */
+    }
+  }
+  
+  
+  /* Logo styling */
+.logo {
+    position: absolute;
+    top: 10px; /* Adjust vertical position */
+    left: 10px; /* Adjust horizontal position */
+    width: 80px; /* Resize as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 3; /* Ensure it stays on top of other elements */
+  }

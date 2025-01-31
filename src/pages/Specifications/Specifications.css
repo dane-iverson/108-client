@@ -1,0 +1,47 @@
+.specifications-container {
+    max-width: 800px;
+    margin: 80px auto 0; /* Add top margin to leave space for the navbar */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .specifications-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .specifications-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .spec-section {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .spec-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .spec-key {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  

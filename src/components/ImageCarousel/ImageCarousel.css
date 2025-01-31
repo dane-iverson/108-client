@@ -1,0 +1,99 @@
+.carousel-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  margin-top: 20px;
+}
+
+.carousel-slide {
+  width: 90%;
+  height: 90%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative; /* Allows positioning of navbar inside it */
+}
+
+  
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .carousel-arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .left-arrow {
+    left: 20px;
+  }
+  
+  .right-arrow {
+    right: 20px;
+  }
+  
+  .carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 2;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.2);
+  }
+  
+  .dot:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .fullscreen-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .fullscreen-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  

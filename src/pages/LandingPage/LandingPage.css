@@ -1,0 +1,76 @@
+/* Landing page container */
+.landing-page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Background image */
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/108-pics/image1.png"); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    z-index: 1; /* Behind logo and navbar */
+  }
+  
+  /* Logo styling */
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    z-index: 3; /* On top of the image */
+  }
+  
+  /* Navbar container */
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    z-index: 3; /* On top of the image */
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+  }
+  
+  /* Navbar links */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links li a:hover {
+    color: #ffcc00; /* Highlight effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-links {
+      gap: 15px;
+    }
+  
+    .navbar-links li a {
+      font-size: 0.9rem;
+    }
+  }
+  
